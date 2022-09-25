@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  padding: 0 20px;
+}
+
+/* ul,
+li {
+  list-style: none;
+} */
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 0 auto;
+  background-color: grey;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  /* margin: 0 20px; */
+  padding: 15px;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header nav ul li a:hover {
+  background-color: darkgray;
+  letter-spacing: 4px;
+  transition: 1s;
+  /* transform: scale(1.2); */
+}
+
+/* //////////////////////////////////////////////// */
+main {
+  padding: 32px;
+}
+
+.name {
+  margin: 20px 0;
+  font-size: 48px;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.profile {
+  width: 320px;
+  height: 320px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  overflow: hidden;
+  /*해줘야지 hover해도 320px 유지*/
+}
+
+.profile img {
+  width: 320px;
+  height: 320px;
+}
+
+.profile img:hover {
+  width: 320px;
+  height: 320px;
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+
+.all-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-info-wrapper .sub-title {
+  font-size: 32px;
+  font-family: "Gothic A1", sans-serif;
+  margin: 30px 0 10px 0;
+}
+
+.all-info-wrapper section {
+  width: 50%;
+}
+
+.all-info-wrapper .info ul {
+  list-style: none;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+footer {
+  background-color: gray;
+  padding: 40px;
+}
+
+footer p {
+  color: rgb(213, 213, 213);
+}
+
+@media (max-width: 768px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
